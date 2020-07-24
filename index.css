@@ -1,0 +1,34 @@
+.box {
+    background-color: red;
+    border: 1px solid black;
+}
+
+.gridContainer {
+    display: grid;
+    height: 100vh;
+    grid-template-areas: "header header header header" "left content content right" "footer footer footer footer";
+    grid-template-columns: 100px auto auto 100px;
+    grid-template-rows: 120px auto 55px;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    grid-area: header;
+}
+
+.content {
+    grid-area: content;
+}
+
+.right {
+    grid-area: right;
+}
+
+.left {
+    grid-area: left;
+}
+
+.footer {
+    grid-area: footer;
+}
